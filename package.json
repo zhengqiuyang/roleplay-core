@@ -1,0 +1,25 @@
+{
+  "name": "roleplay-core",
+  "version": "0.1.0",
+  "description": "多轮角色扮演对话引擎：人设（隐藏信息+剧本锚点）、会话状态机、混合评分（确定性规则+LLM rubric）、间隔重复调度。interview-mate 引擎抽离，pitch-mate 为第一个消费者。",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "roleplay",
+    "conversation-engine",
+    "persona",
+    "scoring",
+    "spaced-repetition",
+    "llm"
+  ],
+  "license": "MIT"
+}
