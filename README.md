@@ -15,6 +15,12 @@
 
 零运行时依赖，Node ≥ 18，ESM。
 
+## 安装
+
+```bash
+npm install roleplay-core     # 零依赖，Node ≥ 18
+```
+
 ## 用法
 
 ```js

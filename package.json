@@ -1,25 +1,43 @@
 {
   "name": "roleplay-core",
   "version": "0.1.0",
-  "description": "多轮角色扮演对话引擎：人设（隐藏信息+剧本锚点）、会话状态机、混合评分（确定性规则+LLM rubric）、间隔重复调度。interview-mate 引擎抽离，pitch-mate 为第一个消费者。",
+  "description": "多轮角色扮演对话引擎：人设（隐藏信息+剧本锚点）、会话状态机、混合评分（确定性规则+LLM rubric）、间隔重复调度。零依赖，OpenAI 兼容。",
   "type": "module",
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js"
   },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengqiuyang/roleplay-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhengqiuyang/roleplay-core/issues"
+  },
+  "homepage": "https://github.com/zhengqiuyang/roleplay-core#readme",
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=18"
   },
   "keywords": [
-    "roleplay",
+    "llm",
+    "ai-agents",
     "conversation-engine",
-    "persona",
-    "scoring",
+    "roleplay",
     "spaced-repetition",
-    "llm"
+    "zero-dependency",
+    "openai-compatible"
   ],
   "license": "MIT"
 }
